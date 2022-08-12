@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+</head>
+<body>
+
+    <h1>Student Registration Form</h1>
+
+
+    <form class="main" action="index.html">
+        <fieldset class="fldset">
+            <legend>Personal Details</legend>
+            <input type="text" placeholder="NAME" name="name" class="personal">
+            <br>
+            <input type="email" placeholder="EMAIL" name="mail" class="personal">
+            <br>
+            <input type="text" placeholder="AGE" name="age" class="personal">
+        </fieldset>
+        <fieldset class="fldset">
+            <legend>Academic Details</legend>
+            <div class="acad">
+                <label>
+                    <span class="head_dept">DEPARTMENT</span>
+                    <br>
+                    <label><input type="radio" name="dept" value="CS" class="box">CS</label>
+                    <label><input type="radio" name="dept" value="EC" class="box">EC</label>
+                    <label><input type="radio" name="dept" value="EI" class="box">EI</label>
+                    <label><input type="radio" name="dept" value="EE" class="box">EE</label>
+                    <label><input type="radio" name="dept" value="ME" class="box">ME</label>
+                    <label><input type="radio" name="dept" value="CH" class="box">CH</label>
+                    <label><input type="radio" name="dept" value="MM" class="box">MM</label>
+                    <label><input type="radio" name="dept" value="CR" class="box">CR</label>
+                    <label><input type="radio" name="dept" value="FP" class="box">FP</label>
+                    <label><input type="radio" name="dept" value="BT" class="box">BT</label>
+                    <label><input type="radio" name="dept" value="BM" class="box">BM</label>
+                    <label><input type="radio" name="dept" value="MA" class="box">MA</label>
+                    <label><input type="radio" name="dept" value="PH" class="box">PH</label>
+                    <label><input type="radio" name="dept" value="CY" class="box">CY</label>
+                    <label><input type="radio" name="dept" value="LS" class="box">LS</label>
+                </label>
+            </div>
+
+            <br>
+            <div class="acad">
+                <label>
+                    <span class="head_dept">YEAR OF ADMISSION</span>
+                    <br>
+                    <label><input type="radio" name="yroa" value="2019">2019</label>
+                    <label><input type="radio" name="yroa" value="2020">2020</label>
+                    <label><input type="radio" name="yroa" value="2021">2021</label>
+                    <label><input type="radio" name="yroa" value="2022">2022</label>
+                </label>
+            </div>
+
+        </fieldset>
+        <fieldset class="fldset">
+            <legend>Technical Skills</legend>
+            <div class="acad">
+                <label>
+                    <span class="head_dept">LANGUAGES LEARNT</span>
+                    <br>
+                    <label><input type="checkbox" name="lang" value="JAVA">JAVA</label>
+                    <label><input type="checkbox" name="lang" value="C">C</label>
+                    <label><input type="checkbox" name="lang" value="C++">C++</label>
+                    <label><input type="checkbox" name="lang" value="Python">Python</label>
+                    <label><input type="checkbox" name="lang" value="HTML">HTML</label>
+                    <label><input type="checkbox" name="lang" value="CSS">CSS</label>
+                    <label><input type="checkbox" name="lang" value="JAVASCRIPT">JAVASCRIPT</label>
+                </label>
+            </div>
+
+        </fieldset>
+        <button type="submit" name="submit" class="button" onclick="alert('Here we go👉');">SUBMIT YOUR RESPONSE</button>
+        <button type="reset" name="reset" class="button" onclick="alert('Ah shit, here we go again.');">RESET YOUR REPONSES</button>
+    </form>
+</body>
+</html>
